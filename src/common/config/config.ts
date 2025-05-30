@@ -6,7 +6,7 @@ class ConfigService {
     if (!process.env[key]) {
       throw new Error(key + ' environment variable does not set');
     }
-    return process.env[key]!;
+    return process.env[key];
   }
 
   get isProduction(): boolean {
@@ -38,6 +38,12 @@ class ConfigService {
   }
   get MAIL_PASS(): string {
     return this.getEnv('MAIL_PASS');
+  }
+  get API_QDRANT_URL(): string {
+    return this.getEnv('API_QDRANT_URL');
+  }
+  get API_QDRANT_KEY(): string {
+    return this.getEnv('API_QDRANT_KEY');
   }
 }
 const config = new ConfigService();

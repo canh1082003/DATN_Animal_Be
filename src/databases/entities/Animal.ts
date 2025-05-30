@@ -1,23 +1,26 @@
 import mongoose from 'mongoose';
 
-const AnimalSchema = new mongoose.Schema(
+const DogBreedSchema = new mongoose.Schema(
   {
-    name: { type: String, required: true },
-    shape: { type: String, required: true },
-    species: { type: String, required: true }, // Loài động vật
-    age: { type: String, required: true }, // Tuổi
-    habitat: { type: String }, // Môi trường sống
-    diet: {
-      type: String,
-      enum: ['anco', 'anthit', 'antap'],
-      required: true,
+    name: { type: String, required: true }, // Tên giống chó
+    origin: { type: String }, // Nguồn gốc
+    description: { type: String, default: '' }, // Mô tả
+    images: [{ type: String }], // Danh sách link ảnh
+    temperament: [{ type: String }], // Tính cách
+    lifeSpan: { type: String }, // Tuổi thọ (ví dụ: "10-12 years")
+    weight: {
+      min: { type: Number },
+      max: { type: Number },
     },
-    isEndangered: { type: Boolean, default: false }, // Có phải động vật quý hiếm không
-    isDangerous: { type: Boolean, default: false }, //nguy hiểm
-    description: { type: String, default: '' },
+    height: {
+      min: { type: Number },
+      max: { type: Number },
+    },
+    group: { type: String }, // Nhóm chó (nếu có)
+    otherNames: [{ type: String }], // Tên gọi khác
   },
-  { timestamps: true, collection: 'animals' }
+  { timestamps: true, collection: 'dog_breeds' }
 );
 
-const Animal = mongoose.model('Animal', AnimalSchema);
-export default Animal;
+const DogBreed = mongoose.model('DogBreed', DogBreedSchema);
+export default DogBreed;

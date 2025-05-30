@@ -1,12 +1,13 @@
 import { Router } from 'express';
 import animalRouterController from './animalRouterController';
-import { AnimalMiddleware } from '@/middlewares/animal.middlewares';
+import multer from 'multer';
+const upload = multer({ dest: 'uploads/' });
 
-export const AnimalRouter = Router();
+const AnimalRouter = Router();
+AnimalRouter.get('/', animalRouterController.getAnimal);
 AnimalRouter.post(
-  '/createAnimal',
-  AnimalMiddleware,
-  animalRouterController.createAnimal
+  '/getAnimalByImg',
+  upload.single('image'),
+  animalRouterController.getAnimalByImg
 );
-AnimalRouter.delete('/deleteAnimal/:id', animalRouterController.deleteAnimal);
-AnimalRouter.get('/all', animalRouterController.getAllAnimal);
+export default AnimalRouter;

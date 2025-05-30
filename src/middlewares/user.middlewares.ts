@@ -3,50 +3,90 @@ import { checkSchema } from 'express-validator';
 const RegisterMiddleware = checkSchema({
   firstName: {
     notEmpty: true,
-    errorMessage: 'First name is required',
+    errorMessage: {
+      msg: 'First Name is required',
+    },
   },
   lastName: {
     notEmpty: true,
-    errorMessage: 'Last name is required',
+    errorMessage: {
+      msg: 'Last name is required',
+    },
   },
   email: {
-    isEmail: { errorMessage: 'Please enter a valid email address' },
-    notEmpty: { errorMessage: 'Email is required' },
+    isEmail: {
+      errorMessage: {
+        msg: 'Please enter a valid email address',
+      },
+    },
+    notEmpty: {
+      errorMessage: {
+        msg: 'Email is required',
+      },
+    },
     normalizeEmail: true,
   },
   password: {
     isString: true,
-    notEmpty: { errorMessage: 'Password is required' },
+    notEmpty: {
+      errorMessage: {
+        msg: 'Password is required',
+      },
+    },
     isLength: {
       options: { min: 6 },
-      errorMessage: 'Password must be at least 6 characters long',
+      errorMessage: {
+        msg: 'Password must be at least 6 characters long',
+      },
     },
   },
   confirmPassword: {
     isString: true,
-    notEmpty: { errorMessage: 'Confirm password is required' },
+    notEmpty: {
+      errorMessage: {
+        msg: 'Confirm password is required',
+      },
+    },
   },
 });
 
 const LoginMiddleware = checkSchema({
   email: {
-    isEmail: { errorMessage: 'Please enter a valid email address' },
-    notEmpty: { errorMessage: 'Email is required' },
+    isEmail: {
+      errorMessage: {
+        msg: 'Please enter a valid email address',
+      },
+    },
+    notEmpty: {
+      errorMessage: {
+        msg: 'Email is required',
+      },
+    },
     normalizeEmail: true,
   },
   password: {
     isString: true,
-    notEmpty: { errorMessage: 'Password is required' },
+    notEmpty: {
+      errorMessage: {
+        msg: 'Password is required',
+      },
+    },
     isLength: {
       options: { min: 6 },
-      errorMessage: 'Password must be at least 6 characters long',
+      errorMessage: {
+        msg: 'Password must be at least 6 characters long',
+      },
     },
   },
 });
 
 const GetVerifyEmailTokenMiddleWare = checkSchema({
   verifyEmailToken: {
-    notEmpty: { errorMessage: 'Verify Email Token is required' },
+    notEmpty: {
+      errorMessage: {
+        msg: 'Verify Email Token is required',
+      },
+    },
     isString: true,
   },
 });

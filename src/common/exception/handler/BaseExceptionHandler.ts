@@ -50,6 +50,8 @@ class BaseExceptionHandler {
       httpStatusCode: statusCode,
       errors: [errorDetail],
     };
+    console.log(statusCode, 'status codeeeeee');
+    console.log(error, '11111111111111111111111');
     console.log('error', error);
 
     logger.error(error);

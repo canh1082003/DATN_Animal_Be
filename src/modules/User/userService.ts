@@ -1,9 +1,9 @@
+import BadRequestException from '@/common/exception/BadRequestException';
 import User from '@/databases/entities/User';
-import { BadRequestErr } from '@/exception/bad-request-error';
 import AuthErrorCode from '@/utils/AuthErrorCode';
-
 import { Hashing } from '@/utils/hashing';
 import { randomBytes } from 'crypto';
+import { UserInterFace } from './type';
 
 class UserRouterService {
   async register(
@@ -36,19 +36,19 @@ class UserRouterService {
   async findAndVerifyEmailUser(verifyEmailToken: string) {
     const user = await User.findOne({ verifyEmailToken });
     if (!user) {
-      throw new BadRequestErr({
+      throw new BadRequestException({
         errorCode: AuthErrorCode.INVALID_VERIFY_EMAIL_TOKEN,
         errorMessage: `Not found any user with token ${verifyEmailToken}`,
       });
     }
     if (user.isVerifyEmail) {
-      throw new BadRequestErr({
+      throw new BadRequestException({
         errorCode: AuthErrorCode.INVALID_VERIFY_EMAIL_TOKEN,
         errorMessage: 'Email verify already',
       });
     }
     if (user.verifyEmailToken !== verifyEmailToken) {
-      throw new BadRequestErr({
+      throw new BadRequestException({
         errorCode: AuthErrorCode.INVALID_VERIFY_EMAIL_TOKEN,
         errorMessage: 'Invalid token',
       });
@@ -56,6 +56,14 @@ class UserRouterService {
 
     user.isVerifyEmail = true;
     return await user.save();
+  }
+  async updateUserById(id: string, data: Partial<UserInterFace>) {
+    const userId = await User.findById(id);
+    if (!userId) {
+      throw new Error('Not Found User');
+    }
+    Object.assign(userId, data);
+    return await userId?.save();
   }
 }
 export default new UserRouterService();

@@ -1,0 +1,41 @@
+Bạn là một trợ lý ảo chuyên về huấn luyện thú cưng. Khi trả về, hãy đóng gói toàn bộ kết quả dưới dạng một chuỗi duy nhất và sử dụng ký tự \n để biểu thị xuống dòng. Không trả về JSON hay đối tượng, chỉ trả về một chuỗi thuần.\n\n
+### Đầu ra yêu cầu\n
+- Phải là một chuỗi duy nhất (string).\n
+- Mỗi dòng mới phải được biểu thị bằng ký tự \n.\n
+- Sử dụng định dạng Markdown cho các tiêu đề và gạch đầu dòng.\n\n
+---
+\n\n
+Chúc mừng bạn đã đón thêm một thành viên mới vào gia đình! Dưới đây là hướng dẫn chi tiết để huấn luyện chú chó của bạn một cách hiệu quả và nhân văn:\n\n
+### **1. Xây dựng lòng tin và mối quan hệ**\n
+- **Dành thời gian gần gũi**: Chơi đùa, vuốt ve, và nói chuyện nhẹ nhàng để chó làm quen với bạn.\n
+- **Tạo môi trường an toàn**: Chuẩn bị ổ nằm êm ái, đồ chơi, và không gian riêng để chó cảm thấy thoải mái.\n\n
+### **2. Huấn luyện cơ bản**\n
+- **Lệnh “Ngồi”**: Giơ một món thưởng lên trên đầu chó, di chuyển tay ra sau đầu để chó ngẩng lên và ngồi xuống. Nói “Ngồi” khi chó chạm mông xuống sàn và thưởng ngay lập tức.\n
+- **Lệnh “Đứng”**: Từ vị trí ngồi, di chuyển tay có thưởng về phía trước ngang tầm ngực chó, nói “Đứng” khi chó đứng thẳng và thưởng.\n
+- **Lệnh “Đi theo”**: Giữ thức ăn ở cạnh hông bạn, đi bộ về phía trước khi chó theo kịp, nhắc “Đi theo” và thưởng khi chó đứng gần bên.\n\n
+### **3. Xây dựng thói quen hằng ngày**\n
+- **Lịch đi dạo**: Duy trì lịch cố định để chó quen với giờ vận động và vệ sinh.\n
+- **Thức ăn và giờ ăn**: Cho ăn đúng giờ, tránh nửa vời để thiết lập lịch sinh học.\n\n
+### **4. Xử lý hành vi không mong muốn**\n
+- **Sủa quá mức**: Khi chó sủa, giữ im lặng và chờ đến khi nó im, sau đó thưởng.\n
+- **Cắn phá đồ đạc**: Cung cấp đồ chơi cắn phù hợp, khi chó cắn đồ chơi, khen ngợi và thưởng.\n\n
+### **5. Khen thưởng và củng cố tích cực**\n
+- Dùng thức ăn, cưng nựng và lời khen để khuyến khích hành vi đúng.\n
+- Tránh la mắng hay hình phạt mạnh; tập trung vào củng cố hành vi tốt.\n\n
+### **6. Tư vấn chọn chó theo ngân sách**\n
+- Nếu bạn cung cấp số tiền hiện có, tôi có thể gợi ý các giống chó phù hợp với ngân sách đó.\n
+- Bao gồm cả gợi ý mua chó tại trại giống, cứu hộ hoặc nhận nuôi miễn phí.\n
+- Đưa ra thông tin về chi phí ban đầu và chi phí chăm sóc hàng tháng để bạn cân nhắc.\n\n
+
+✅ Kết Quả Phân Tích  
+Dựa trên thông tin bạn cung cấp, đây là phân tích và đề xuất của chúng tôi.
+
+### 🧠 Phân tích hành vi  
+Dựa trên mô tả của bạn, có vẻ như chó của bạn đang thể hiện hành vi **hung hăng**, xảy ra **gần đây**. Đây có thể là dấu hiệu phản ứng với căng thẳng, thay đổi môi trường hoặc thiếu rèn luyện.
+
+### 📌 Nguyên nhân có thể  
+- Thiếu kích thích tinh thần và thể chất  
+- Lo âu chia ly hoặc lo lắng do thay đổi môi trường  
+- Chưa được huấn luyện kiểm soát hành vi  
+- Phản ứng bảo vệ lãnh thổ hoặc đồ chơi/thức ăn  
+- Đau hoặc khó chịu sau triệt sản (nên loại trừ nguyên nhân y tế)

@@ -1,0 +1,58 @@
+const ket_qua_phan_tich = `✅ Kết Quả Phân Tích
+Dựa trên thông tin bạn cung cấp, dưới đây là nhận định và gợi ý phù hợp với giống chó **{{giống_chó}}**.
+
+### 🧠 Phân tích hành vi
+Chó của bạn đang có dấu hiệu **{{loại_hành_vi}}**, được ghi nhận **{{thời_gian}}**.
+Đây là hành vi phổ biến ở giống **{{giống_chó}}** khi:
+{{danh_sách_nguyên_nhân_theo_giống_va_loai_hanh_vi}}
+
+### 📌 Nguyên nhân có thể
+- Thiếu vận động/trí tuệ (rất thường gặp ở {{giống_chó}})
+- Không có huấn luyện nền tảng
+- Phản ứng với môi trường lạ ({{tuổi}} tuổi là giai đoạn nhạy cảm)
+- Tác động nội tiết sau triệt sản (nếu {{triệt_sản}})
+
+### 💡 Giải pháp đề xuất
+
+#### 1. Tăng cường vận động
+- {{giống_chó}} cần ít nhất {{số_phút}} hoạt động mỗi ngày (tuổi: {{tuổi}})
+
+#### 2. Huấn luyện hành vi cụ thể
+- Với hành vi {{loại_hành_vi}}, hãy áp dụng:
+    - Desensitization (giảm nhạy)
+    - Phản điều kiện hóa
+    - Tăng cường tích cực bằng thưởng
+
+#### 3. Ổn định lịch sinh hoạt và môi trường sống
+
+### 🏁 Ghi chú
+Nếu hành vi không cải thiện sau 2–4 tuần áp dụng các biện pháp trên, nên tham khảo chuyên gia hành vi chó.
+
+🎉 **Chúc bạn và {{giống_chó}} đồng hành vui vẻ và bền vững!**`;
+
+const phan_tich_hanh_vi = `### 🧠 Phân tích hành vi
+Chó của bạn đang có dấu hiệu **{{loại_hành_vi}}**, được ghi nhận **{{thời_gian}}**.
+Đây là hành vi phổ biến ở giống **{{giống_chó}}** khi:
+{{danh_sách_nguyên_nhân_theo_giống_va_loai_hanh_vi}}`;
+
+const nguyen_nhan_co_the = `### 📌 Nguyên nhân có thể
+- Thiếu vận động/trí tuệ (rất thường gặp ở {{giống_chó}})
+- Không có huấn luyện nền tảng
+- Phản ứng với môi trường lạ ({{tuổi}} tuổi là giai đoạn nhạy cảm)
+- Tác động nội tiết sau triệt sản (nếu {{triệt_sản}})`;
+
+const giai_phap_de_xuat = `### 💡 Giải pháp đề xuất
+
+#### 1. Tăng cường vận động
+- {{giống_chó}} cần ít nhất {{số_phút}} hoạt động mỗi ngày (tuổi: {{tuổi}})
+
+#### 2. Huấn luyện hành vi cụ thể
+- Với hành vi {{loại_hành_vi}}, hãy áp dụng:
+    - Desensitization (giảm nhạy)
+    - Phản điều kiện hóa
+    - Tăng cường tích cực bằng thưởng
+
+#### 3. Ổn định lịch sinh hoạt và môi trường sống
+
+### 🏁 Ghi chú
+Nếu hành vi không cải thiện sau 2–4 tuần áp dụng các biện pháp trên, nên tham khảo chuyên gia hành vi chó.`;

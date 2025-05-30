@@ -8,6 +8,8 @@
     "sourceMap": true,
     "outDir": "dist",
     "baseUrl": "./src",
+     "typeRoots": [ "./node_modules/@types"],
+     "types": ["express"],
     "paths": {
       "@/*": ["./*"]
     },

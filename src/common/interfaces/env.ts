@@ -7,4 +7,6 @@ export interface ENV {
   MONGO_URL: string | undefined;
   MAIL_USER: string | undefined;
   MAIL_PASS: string | undefined;
+  API_QDRANT_URL: string | undefined;
+  API_QDRANT_KEY: string | undefined;
 }

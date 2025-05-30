@@ -3,6 +3,6 @@ import { ErrorDetail } from './express';
 
 export interface ErrorArgs {
   httpCode: number;
-  description: ErrorDetail | ValidationError[];
+  description: ValidationError[] | ErrorDetail;
   isOperational?: boolean;
 }

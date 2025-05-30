@@ -1,0 +1,10 @@
+import { Router } from 'express';
+import libraryController from './libraryController';
+const LibraryRouter = Router();
+LibraryRouter.get('/all', libraryController.getAllLibrary);
+LibraryRouter.post('/create', libraryController.createLibrary);
+LibraryRouter.put('/update/:id', libraryController.updateLibrary);
+LibraryRouter.delete('/delete/:id', libraryController.deleteLibrary);
+LibraryRouter.get('/:id', libraryController.getLibraryById);
+LibraryRouter.get('/category/:type', libraryController.getLibraryByType);
+export default LibraryRouter;
